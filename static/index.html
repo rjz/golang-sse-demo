@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+    <style type="text/css">
+      td:last-child {
+        width: 60%;
+      }
+
+      #root {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      #root .table-container {
+        flex-grow: 1;
+        overflow-y: scroll;
+      }
+
+      #root table thead {
+        background-color: #fff;
+        margin: 0;
+      }
+
+      #root .form-container {
+        border-top: 1px solid #231f20;
+        padding: 1em;
+      }
+
+      #root form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+
+      #root .form--inline input {
+        width: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html
